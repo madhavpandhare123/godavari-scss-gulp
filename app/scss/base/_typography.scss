@@ -1,0 +1,71 @@
+
+.list-unstyle {
+    list-style: none;
+ }
+ .text-black{
+     color: #000;
+ }
+ .btn{
+     display: inline-block;
+     padding: 10px 15px;
+     border: 1px solid transparent;
+ }
+ .btn-primary{
+     background-color: $primary-color;
+     color: #000;
+     &:hover, &:focus, &:active{
+         background-color: #fff;
+         border: none;
+         box-shadow: 0 0 0 0.2rem rgba(248, 248, 56, 0.5);
+         color: #000;
+     }
+ }
+
+ .btn-wrap {
+    text-align: center;
+    margin: 7rem 0;
+    @include breakpoint(mobile-max) {
+        margin: 3rem 0;
+    }
+    &__know-btn {
+        text-align: center;
+        font-size: 1.6rem;
+        border-radius: 10px;
+        padding: 10px 25px;
+        text-transform: uppercase;
+    }
+}
+
+.top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: $poppins;
+    &__main-blur-text {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 15rem;
+        opacity: 0.1;
+        font-weight: 900;
+        @include breakpoint(mobile-max) {
+            font-size: 8rem;
+        }
+        @include breakpoint(mobile-max-550) {
+            font-size: 5rem;
+        }
+    }
+    &__heading {
+        text-transform: uppercase;
+    position: absolute;
+    left: 45%;
+    bottom: 19%;
+    font-weight: bold;
+    font-size: 3.6rem;
+    @include breakpoint(mobile-max) {
+        font-size: 2.6rem;
+    }
+    @include breakpoint(mobile-max-550) {
+        font-size: 1.6rem;
+    }
+    }
+}

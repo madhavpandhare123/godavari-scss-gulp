@@ -1,0 +1,29 @@
+.services-section {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.manage-irrigation {
+    &__usp-lists {
+        text-align: center;
+        @include breakpoint(mobile-max) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include breakpoint(mobile-max) {
+            margin-bottom: 3rem;
+        }
+        li {
+            width: 130px;
+        }
+        &__icon-wrap {
+            margin-bottom: 2rem;
+        }
+        &__name {
+            text-transform: uppercase;
+        }
+    }
+}

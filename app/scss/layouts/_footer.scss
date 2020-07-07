@@ -1,0 +1,270 @@
+.abt-headings {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    @include breakpoint(ipad-pro-max) {
+        font-size: 1.5rem;
+    }
+    @include breakpoint(mobile-max) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    padding: 2rem 2rem 2rem 0;
+}
+.footer-icons-mail {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem 1.5rem 2rem 0;
+}
+.footer-sub-heading {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: $black-color;
+    font-weight: 700;
+    @include breakpoint(ipad-pro-max) {
+        font-size: 1.5rem;
+    }
+}
+.social-icons {
+    margin-left: 1.5rem;
+    @include breakpoint(ipad-max) {
+        margin-left: 1rem;
+    }
+}
+
+.footer-section {
+    &__top-img-box {
+        margin-bottom: -8px;
+    }
+    &__wrapper {
+        background-color: $primary-color;
+        &__main-content {
+            // padding: 3rem 0;
+            justify-content: space-between;
+            @include breakpoint(large-desktop-max) {
+                padding: 3rem 4rem;
+            }
+            @include breakpoint(ipad-pro-max) {
+                padding: 3rem 3rem;
+            }
+            @include breakpoint(mobile-max) {
+                padding: 3rem 1rem;
+                flex-direction: column;
+            }
+        }
+    }
+    &__left {
+        width: 65%;
+        margin: 3rem 10rem; 
+        @include breakpoint(ipad-pro) {
+            width: 60%;
+        }
+        @include breakpoint(ipad-pro-max) {
+            width: 55%;
+        }
+        @include breakpoint(mobile-max) {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.subscribe-section {
+    color: #000;
+    &__title {
+        padding: 2rem 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        @include breakpoint(ipad-pro-max) {
+            padding: 1.5rem 0;
+            font-size: 2rem;
+        }
+        @include breakpoint(mobile-max) {
+            font-size: 1.5rem;
+        }
+    }
+    &__subscribe-box {
+        position: relative;
+    }
+    &__input-wrapper {
+        &:focus {
+            outline: none;
+        }
+        @include breakpoint(mobile-max) {
+            font-size: 0.8rem;
+        }
+        &__subscribe-input {
+            background-color: $footer-bgcolor;
+            border: none;
+            border-radius: 30px;
+            padding: 2.4rem;
+            color: $black-color;
+            width: 100%;
+            @include breakpoint(ipad-pro-max) {
+                padding: 1.5rem;
+            }
+            @include breakpoint(mobile-max) {
+                padding: 1rem;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        ::placeholder {
+            color: $black-color;
+            font-size: 1.4rem;
+            @include breakpoint(mobile-max) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    &__subbtn {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        background-color: $white-color;
+        border-radius: 25px;
+        color: $black-color;
+        padding: 1.5rem 7rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        @include breakpoint(ipad-pro-max) {
+            padding: 1rem 4.5rem;
+            font-size: 1.2rem;
+            top: 6px;
+        }
+        @include breakpoint(mobile-max) {
+            padding: 0.6rem 0.5rem;
+            font-size: 0.8rem;
+            top: 4px;
+        }
+    }
+}
+
+.about-us {
+    margin: 3rem 0;
+    justify-content: space-between;
+    &__link {
+        width: 30%;
+    }
+    li {
+        line-height: 2;
+        font-size: 1.4rem;
+        @include breakpoint(ipad-pro-max) {
+            font-size: 1.2rem;
+        }
+        @include breakpoint(mobile-max) {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.important-links {
+    width: 70%;
+    &__count-list {
+        column-count: 2;
+    }
+    li {
+        line-height: 2;
+        font-size: 1.4rem;
+        @include breakpoint(ipad-pro-max) {
+            font-size: 1.2rem;
+        }
+        @include breakpoint(mobile-max) {
+            font-size: 0.9rem;
+        }
+    }
+}
+.copyright-section {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5rem;
+    @include breakpoint(ipad-pro-max) {
+        font-size: 1rem;
+    }
+    @include breakpoint(ipad-max) {
+        font-size: 0.8rem;
+    }
+    @include breakpoint(mobile-max) {
+        display: none;
+    }
+    &__copyright-text {
+        display: flex;
+        // flex-direction: column;
+        line-height: 1.4;
+    }
+    &__powered-by {
+        // flex-direction: column;
+        line-height: 1.4;
+        // align-items: flex-end;
+    }
+}
+.footer-contact-section {
+    background-color: $footer-bgcolor;
+    padding: 4rem;
+    width: 30%;
+    @include breakpoint(ipad-pro) {
+        width: 35%;
+        padding: 2rem;
+    }
+    @include breakpoint(ipad-pro-max) {
+        width: 40%;
+    }
+    @include breakpoint(ipad-max) {
+        padding: 2rem;
+    }
+    @include breakpoint(mobile-max) {
+        width: 100%;
+    }
+    &__contact-sub-info {
+        font-size: 1.4rem;
+        color: $black-color;
+        @include breakpoint(ipad-pro-max) {
+            font-size: 1.2rem;
+        }
+    }
+    &__footer-right-description {
+        border-bottom: 1px solid $text-color;
+        padding-bottom: 2rem;
+        font-style: normal;
+    }
+}
+
+.mobile-copyright-section {
+    display: none;
+    @include breakpoint(mobile-max) {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1rem;
+        &__copyright-text {
+            flex-direction: column;
+            line-height: 1.4;
+        }
+        &__powered-by {
+            flex-direction: column;
+            line-height: 1.4;
+        }
+    }
+}
+.follow-links {
+    margin-top: 4rem;
+    &__social-icon-wrapper {
+        justify-content: stretch;
+        margin-top: 1rem;
+        font-size: 2rem;
+        border-left: 1px solid $white-color;
+        @include breakpoint(ipad-max) {
+           font-size: 1rem;
+        }
+    }
+}

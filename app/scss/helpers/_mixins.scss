@@ -1,0 +1,22 @@
+$breakpoints: (
+  'mobile-max-550': (max-width: 550px),
+  'mobile-max': (max-width: 767px),
+  'ipad-min': (min-width: 768px),
+  'ipad-max': (max-width: 768px),
+  'ipad-pro-max': (max-width: 991px),
+  'ipad-pro': (max-width: 1024px),
+  'desktop-min': (min-width: 992px),
+  'large-desktop-min': (min-width: 1200px),
+  'large-desktop-max': (max-width: 1200px),
+);
+
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+      @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}	

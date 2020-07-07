@@ -1,0 +1,43 @@
+.card-columns{
+    column-count: 2;
+    @include breakpoint(ipad-pro-max) {
+        column-count: 1;
+    }
+}
+.card{
+    box-shadow: 1px 1px 1px #8888;
+    margin-bottom: 4rem !important;
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+.card-body{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    @include breakpoint(ipad-pro-max) {
+        padding: 4rem;
+    }
+    @include breakpoint(mobile-max) {
+        padding: 2rem;
+    }
+}
+.card-title{
+    font-size: 1.8rem;
+    @include breakpoint(ipad-pro-max) {
+        font-size: 1.4rem;
+    }
+}
+.card-text{
+    font-size: 1.6rem;
+    @include breakpoint(ipad-pro-max) {
+        font-size: 1.2rem;
+    }
+}
+.card-img-wrapper{
+    min-width: 230px;
+    @include breakpoint(ipad-pro-max) {
+        min-width: 130px;
+    }
+}

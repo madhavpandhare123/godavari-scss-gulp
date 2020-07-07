@@ -1,0 +1,236 @@
+.header-img-wrpper{
+    // width: 100%;
+    // height: 100%;
+    position: relative;
+}
+
+.header {
+    padding: 2rem 0;
+    position: absolute;
+    top: 0;
+    @include breakpoint(large-desktop-max) {
+        padding: 2rem 4rem;
+    }
+    @include breakpoint(ipad-pro-max) {
+        padding: 2rem 2rem;
+    }
+    @include breakpoint(mobile-max) {
+        flex-direction: column;
+    }
+    &__left {
+        @include breakpoint(mobile-max) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__logo-section {
+            @include breakpoint(ipad-max) {
+                align-items: center;
+            }
+        }
+        &__img-wrapper {
+            width: 42px;
+            height: 42px;
+            margin-right: 0.5rem;
+        }
+        &__logo-text {
+            font-size: 1.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+            display: inline-block;
+            width: 290px;
+            @include breakpoint(ipad-max) {
+                font-size: 1.2rem;
+                width: 200px;
+            }
+            @include breakpoint(mobile-max) {
+                font-size: 2rem;
+            }
+            @include breakpoint(mobile-max-550) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    &__right {
+        &__top {
+            @include breakpoint(ipad-max) {
+                align-items: center;
+            }
+            @include breakpoint(mobile-max) {
+                flex-direction: column;
+            }
+            &__secondory-menu {
+                li {
+                    a {
+                        display: block;
+                        font-size: 1.4rem;
+                        padding: 0 1rem;
+                        @include breakpoint(ipad-pro) {
+                            font-size: 1.2rem;
+                        }
+                        @include breakpoint(ipad-max) {
+                            font-size: 0.8rem;
+                            // font-weight: 700;
+                        }
+                        @include breakpoint(mobile-max) {
+                            font-size: 1rem;
+                        }
+                        &:hover,
+                        &:focus {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+            &__inc-dec-list {
+                li {
+                    a {
+                        display: block;
+                        line-height: 1;
+                        padding: 0 0.7rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+            &__dec {
+                font-size: 1.1rem;
+                @include breakpoint(ipad-pro-max) {
+                    font-size: 0.8rem;
+                }
+                @include breakpoint(mobile-max) {
+                    font-size: 1rem;
+                }
+                @include breakpoint(mobile-max-550) {
+                    font-size: 0.9rem;
+                }
+            }
+            &__default {
+                font-size: 1.4rem;
+                @include breakpoint(ipad-pro-max) {
+                    font-size: 1.1rem;
+                }
+                @include breakpoint(mobile-max) {
+                    font-size: 1.4rem;
+                }
+                @include breakpoint(mobile-max-550) {
+                    font-size: 1.2rem;
+                }
+            }
+            &__inc {
+                font-size: 1.6rem;
+                @include breakpoint(ipad-pro-max) {
+                    font-size: 1.3rem;
+                }
+                @include breakpoint(mobile-max) {
+                    font-size: 1.7rem;
+                }
+                @include breakpoint(mobile-max-550) {
+                    font-size: 1.3rem;
+                }
+            }
+            &__lang {
+                border: none;
+                outline-offset: 0;
+                font-size: 1.4rem;
+                margin: 0 1rem;
+                // appearance:none;
+                // background-image: url(../../images/select-dropdown.svg);
+                @include breakpoint(ipad-pro-max) {
+                    font-size: 1rem;
+                }
+                @include breakpoint(mobile-max) {
+                    font-size: 1.3rem;
+                }
+                @include breakpoint(mobile-max-550) {
+                    font-size: 1.2rem;
+                }
+                option {
+                    outline: none;
+                }
+            }
+            &__theme-change {
+                border-left: 1px solid $border-color;
+                border-right: 1px solid $border-color;
+                padding: 0 1rem;
+                li {
+                    a {
+                        display: block;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 100%;
+                        margin: 0 0.3rem;
+                    }
+                }
+            }
+            &__blue {
+                background-color: $border-color;
+            }
+            &__green {
+                background-color: $green-color;
+            }
+            &__yellow {
+                background-color: $yellow-color;
+            }
+            &__search-box {
+                transform: rotate(270deg);
+                &__search{
+                    padding: 0 1rem;
+                }
+            }
+            &__header-icon-wrapper{
+                @include breakpoint(mobile-max) {
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        &__bottom {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+            @include breakpoint(ipad-pro) {
+                font-size: 1.2rem;
+            }
+            @include breakpoint(ipad-max) {
+                font-size: 1rem;
+            }
+            li {
+                a {
+                    display: block;
+                    font-size: 1.4rem;
+                    padding: 0 0.8rem;
+                    border-right: 1px solid $border-color;
+                    @include breakpoint(ipad-pro) {
+                        font-size: 1.2rem;
+                        padding: 0 0.5rem;
+                    }
+                    @include breakpoint(ipad-max) {
+                        font-size: 0.8rem;
+                    }
+                    @include breakpoint(mobile-max) {
+                        font-size: 1.4rem;
+                        padding: 2rem;
+                        text-align: center;
+                        border-bottom: 1px solid $border-color;
+                        border-right: none;
+                    }
+                    &:hover{
+                        color: $primary-color;
+                    }
+                    // &:last-child{
+                    //     border-right: none;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+// .header-img{
+    
+// }
+
+// .header-img img {
+//     flex-shrink: 0;
+//     min-width: 100%;
+//     min-height: 100%
+// }
