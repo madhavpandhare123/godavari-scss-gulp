@@ -208,10 +208,11 @@
                     }
                     @include breakpoint(mobile-max) {
                         font-size: 1.4rem;
-                        padding: 2rem;
+                        padding: 1rem;
                         text-align: center;
-                        border-bottom: 1px solid $border-color;
+                        border-bottom: 1px solid $white-color;
                         border-right: none;
+                        color: #fff;
                     }
                     &:hover{
                         color: $primary-color;
@@ -225,6 +226,9 @@
     }
 }
 
+.navbar-toggler{
+    background-color: #fff;
+}
 // .header-img{
     
 // }

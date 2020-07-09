@@ -48,25 +48,33 @@
             // padding: 3rem 0;
             justify-content: space-between;
             @include breakpoint(large-desktop-max) {
-                padding: 3rem 4rem;
+                // padding: 3rem 4rem;
             }
             @include breakpoint(ipad-pro-max) {
-                padding: 3rem 3rem;
+                // padding: 3rem 3rem;
             }
             @include breakpoint(mobile-max) {
-                padding: 3rem 1rem;
+                // padding: 3rem 1rem;
                 flex-direction: column;
+                align-items: center;
             }
         }
     }
+    .left-section{
+        width: 65%;
+    }
     &__left {
         width: 65%;
-        margin: 3rem 10rem; 
+        // margin: 3rem 10rem;
+        margin: 3rem 8rem; 
+        @include breakpoint(large-desktop-max) {
+            width: 90%; 
+        }
         @include breakpoint(ipad-pro) {
-            width: 60%;
+            // width: 60%;
         }
         @include breakpoint(ipad-pro-max) {
-            width: 55%;
+            // width: 55%;
         }
         @include breakpoint(mobile-max) {
             width: 100%;
@@ -187,7 +195,11 @@
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 5.5rem;
+    // margin-top: 5.5rem;
+    margin: 5.5rem 0 0 8rem;
+    @include breakpoint(large-desktop-max) {
+        margin: 3rem 2rem 0 8rem;
+    }
     @include breakpoint(ipad-pro-max) {
         font-size: 1rem;
     }
@@ -213,11 +225,11 @@
     padding: 4rem;
     width: 30%;
     @include breakpoint(ipad-pro) {
-        width: 35%;
+        // width: 35%;
         padding: 2rem;
     }
     @include breakpoint(ipad-pro-max) {
-        width: 40%;
+        // width: 40%;
     }
     @include breakpoint(ipad-max) {
         padding: 2rem;

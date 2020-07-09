@@ -7188,15 +7188,15 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff; }
 
 .icon-location:before {
-  content: "";
-  color: #fff; }
-
-.icon-mail:before {
   content: "";
   color: #fff; }
 
+.icon-mail:before {
+  content: "";
+  color: #fff; }
+
 .icon-search:before {
-  content: ""; }
+  content: ""; }
 
 html {
   font-size: 10px; }
@@ -7462,12 +7462,16 @@ a {
       @media (max-width: 767px) {
         .header__right__bottom li a {
           font-size: 1.4rem;
-          padding: 2rem;
+          padding: 1rem;
           text-align: center;
-          border-bottom: 1px solid #265781;
-          border-right: none; } }
+          border-bottom: 1px solid #FFF;
+          border-right: none;
+          color: #fff; } }
       .header__right__bottom li a:hover {
         color: #F2E162; }
+
+.navbar-toggler {
+  background-color: #fff; }
 
 .abt-headings {
   font-size: 1.8rem;
@@ -7515,26 +7519,20 @@ a {
   background-color: #F2E162; }
   .footer-section__wrapper__main-content {
     justify-content: space-between; }
-    @media (max-width: 1200px) {
-      .footer-section__wrapper__main-content {
-        padding: 3rem 4rem; } }
-    @media (max-width: 991px) {
-      .footer-section__wrapper__main-content {
-        padding: 3rem 3rem; } }
     @media (max-width: 767px) {
       .footer-section__wrapper__main-content {
-        padding: 3rem 1rem;
-        flex-direction: column; } }
+        flex-direction: column;
+        align-items: center; } }
+
+.footer-section .left-section {
+  width: 65%; }
 
 .footer-section__left {
   width: 65%;
-  margin: 3rem 10rem; }
-  @media (max-width: 1024px) {
+  margin: 3rem 8rem; }
+  @media (max-width: 1200px) {
     .footer-section__left {
-      width: 60%; } }
-  @media (max-width: 991px) {
-    .footer-section__left {
-      width: 55%; } }
+      width: 90%; } }
   @media (max-width: 767px) {
     .footer-section__left {
       width: 100%;
@@ -7637,7 +7635,10 @@ a {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 5.5rem; }
+  margin: 5.5rem 0 0 8rem; }
+  @media (max-width: 1200px) {
+    .copyright-section {
+      margin: 3rem 2rem 0 8rem; } }
   @media (max-width: 991px) {
     .copyright-section {
       font-size: 1rem; } }
@@ -7659,11 +7660,7 @@ a {
   width: 30%; }
   @media (max-width: 1024px) {
     .footer-contact-section {
-      width: 35%;
       padding: 2rem; } }
-  @media (max-width: 991px) {
-    .footer-contact-section {
-      width: 40%; } }
   @media (max-width: 768px) {
     .footer-contact-section {
       padding: 2rem; } }
