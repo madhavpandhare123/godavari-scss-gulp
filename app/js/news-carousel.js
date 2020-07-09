@@ -11,7 +11,7 @@
 //         friction: 0.8,
 //         draggable: false
 //       });
-  
+
 //       //enable clicking on cards
 //       slider.on("staticClick.flickity", function (
 //         event,
@@ -23,7 +23,7 @@
 //           slider.flickity("selectCell", cellIndex);
 //         }
 //       });
-  
+
 //       //resize the selected card (the middle one on page load + any other one when clicked); also center the carousel on page load, because, for some reason, it tends to shift to the right if .resize() and .reposition() aren't applied
 //       var flkty = slider.data("flickity");
 //       flkty.selectedElement.classList.add("is-custom-selected");
@@ -39,12 +39,12 @@
 //         }
 //       }
 //       requestAnimationFrame(reposition);
-  
+
 //       flkty.on("settle", () => {
 //         $(".card").removeClass("is-custom-selected");
 //         $(".flickity-prev-next-button").css("pointer-events", "none");
 //         flkty.selectedElement.classList.add("is-custom-selected");
-  
+
 //         let time = 0;
 //         function reposition() {
 //           flkty.reposition();
@@ -124,20 +124,20 @@ if ($num % 2 == 0) {
   $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
 }
 
-$('.my-card').click(function() {
+$('.my-card').click(function () {
   $slide = $('.active').width();
   console.log($('.active').position().left);
-  
+
   if ($(this).hasClass('next')) {
     $('.my-card').removeClass('brief-desc');
-    $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+    $('.card-carousel').stop(false, true).animate({ left: '-=' + $slide });
   } else if ($(this).hasClass('prev')) {
-    $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+    $('.card-carousel').stop(false, true).animate({ left: '+=' + $slide });
   }
-  
+
   $(this).removeClass('prev next');
   $(this).siblings().removeClass('prev active next');
-  
+
   $(this).addClass('active');
   $(this).prev().addClass('prev');
   $(this).next().addClass('next');
@@ -145,7 +145,7 @@ $('.my-card').click(function() {
 
 
 // Keyboard nav
-$('html body').keydown(function(e) {
+$('html body').keydown(function (e) {
   if (e.keyCode == 37) { // left
     $('.active').prev().trigger('click');
   }

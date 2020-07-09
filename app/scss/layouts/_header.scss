@@ -1,6 +1,4 @@
-.header-img-wrpper{
-    // width: 100%;
-    // height: 100%;
+.header-img-wrpper {
     position: relative;
 }
 
@@ -39,15 +37,17 @@
             font-weight: 700;
             display: inline-block;
             width: 290px;
+            color: $white-color;
             @include breakpoint(ipad-max) {
                 font-size: 1.2rem;
-                width: 200px;
+                width: 400px;
             }
             @include breakpoint(mobile-max) {
                 font-size: 2rem;
             }
             @include breakpoint(mobile-max-550) {
                 font-size: 1.3rem;
+                width: 65%;
             }
         }
     }
@@ -70,10 +70,10 @@
                         }
                         @include breakpoint(ipad-max) {
                             font-size: 0.8rem;
-                            // font-weight: 700;
                         }
                         @include breakpoint(mobile-max) {
                             font-size: 1rem;
+                            color: $white-color;
                         }
                         &:hover,
                         &:focus {
@@ -133,8 +133,6 @@
                 outline-offset: 0;
                 font-size: 1.4rem;
                 margin: 0 1rem;
-                // appearance:none;
-                // background-image: url(../../images/select-dropdown.svg);
                 @include breakpoint(ipad-pro-max) {
                     font-size: 1rem;
                 }
@@ -173,11 +171,11 @@
             }
             &__search-box {
                 transform: rotate(270deg);
-                &__search{
+                &__search {
                     padding: 0 1rem;
                 }
             }
-            &__header-icon-wrapper{
+            &__header-icon-wrapper {
                 @include breakpoint(mobile-max) {
                     margin-top: 2rem;
                 }
@@ -193,48 +191,44 @@
             @include breakpoint(ipad-max) {
                 font-size: 1rem;
             }
-            li {
-                a {
-                    display: block;
-                    font-size: 1.4rem;
-                    padding: 0 0.8rem;
-                    border-right: 1px solid $border-color;
-                    @include breakpoint(ipad-pro) {
-                        font-size: 1.2rem;
-                        padding: 0 0.5rem;
-                    }
-                    @include breakpoint(ipad-max) {
-                        font-size: 0.8rem;
-                    }
-                    @include breakpoint(mobile-max) {
+            ul {
+                @include breakpoint(mobile-max) {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                li {
+                    a {
+                        display: block;
                         font-size: 1.4rem;
-                        padding: 1rem;
-                        text-align: center;
-                        border-bottom: 1px solid $white-color;
-                        border-right: none;
-                        color: #fff;
+                        padding: 0 0.8rem;
+                        border-right: 1px solid $border-color;
+                        @include breakpoint(ipad-pro) {
+                            font-size: 1.2rem;
+                            padding: 0 0.5rem;
+                        }
+                        @include breakpoint(ipad-max) {
+                            font-size: 0.8rem;
+                        }
+                        @include breakpoint(mobile-max) {
+                            font-size: 1.4rem;
+                            padding: 1rem;
+                            text-align: center;
+                            border-bottom: 1px solid $white-color;
+                            border-right: none;
+                            color: #fff;
+                        }
+                        &:hover {
+                            color: $primary-color;
+                        }
+                        // &:last-child{
+                        //     border-right: none;
+                        // }
                     }
-                    &:hover{
-                        color: $primary-color;
-                    }
-                    // &:last-child{
-                    //     border-right: none;
-                    // }
                 }
             }
         }
     }
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: #fff;
 }
-// .header-img{
-    
-// }
-
-// .header-img img {
-//     flex-shrink: 0;
-//     min-width: 100%;
-//     min-height: 100%
-// }

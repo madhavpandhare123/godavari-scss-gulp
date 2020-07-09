@@ -7329,17 +7329,19 @@ a {
     line-height: 1.2;
     font-weight: 700;
     display: inline-block;
-    width: 290px; }
+    width: 290px;
+    color: #FFF; }
     @media (max-width: 768px) {
       .header__left__logo-text {
         font-size: 1.2rem;
-        width: 200px; } }
+        width: 400px; } }
     @media (max-width: 767px) {
       .header__left__logo-text {
         font-size: 2rem; } }
     @media (max-width: 550px) {
       .header__left__logo-text {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        width: 65%; } }
   @media (max-width: 768px) {
     .header__right__top {
       align-items: center; } }
@@ -7358,7 +7360,8 @@ a {
         font-size: 0.8rem; } }
     @media (max-width: 767px) {
       .header__right__top__secondory-menu li a {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        color: #FFF; } }
     .header__right__top__secondory-menu li a:hover, .header__right__top__secondory-menu li a:focus {
       color: #F2E162; }
   .header__right__top__inc-dec-list li a {
@@ -7447,27 +7450,30 @@ a {
     @media (max-width: 768px) {
       .header__right__bottom {
         font-size: 1rem; } }
-    .header__right__bottom li a {
+    @media (max-width: 767px) {
+      .header__right__bottom ul {
+        background-color: rgba(0, 0, 0, 0.5); } }
+    .header__right__bottom ul li a {
       display: block;
       font-size: 1.4rem;
       padding: 0 0.8rem;
       border-right: 1px solid #265781; }
       @media (max-width: 1024px) {
-        .header__right__bottom li a {
+        .header__right__bottom ul li a {
           font-size: 1.2rem;
           padding: 0 0.5rem; } }
       @media (max-width: 768px) {
-        .header__right__bottom li a {
+        .header__right__bottom ul li a {
           font-size: 0.8rem; } }
       @media (max-width: 767px) {
-        .header__right__bottom li a {
+        .header__right__bottom ul li a {
           font-size: 1.4rem;
           padding: 1rem;
           text-align: center;
           border-bottom: 1px solid #FFF;
           border-right: none;
           color: #fff; } }
-      .header__right__bottom li a:hover {
+      .header__right__bottom ul li a:hover {
         color: #F2E162; }
 
 .navbar-toggler {
